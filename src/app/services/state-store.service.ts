@@ -58,5 +58,3 @@ export class StateStoreService {
     ];
   }
 }
-
-//mailto:palbizu@sparkdigital.com
