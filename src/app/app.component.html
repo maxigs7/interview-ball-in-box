@@ -1,0 +1,15 @@
+<h1>Ball in the Box</h1>
+<p>
+  You have to create a grid 2x2(4 cells) wherein you should show a red ball
+  where you do a click in a cell. And leave a trail (ball in light red) when you
+  pass the ball between cells
+</p>
+
+<div class="board">
+  <app-square
+    class="board-item"
+    *ngFor="let square of squares$ | async"
+    [square]="square"
+    (click)="changeState(square)"
+  ></app-square>
+</div>
